@@ -204,6 +204,8 @@ function show() {
 }
 
 function applyLanguage() {
+  // The page language follows the panel language (matters for CJK glyph choice and screen readers).
+  try { document.documentElement.lang = state.lang; } catch (e) { /* not essential */ }
   document.querySelectorAll("[data-i18n]").forEach((n) => { n.textContent = T(n.getAttribute("data-i18n")); });
   if (state.status) setStatus(state.status.key, state.status.params, state.status.tone);
   if (state.preview) setPreview(state.preview.key, state.preview.params);

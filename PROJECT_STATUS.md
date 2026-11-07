@@ -71,3 +71,5 @@ Real footage with people, masks on V2+, a true two-PC handoff, and a docked-pane
 
 ## Update 2026-11-01 night
 v0.3.2: docked panel verified; clipped text in the narrow dock fixed (owner's report). 55 tests. Evidence `evidence/native-20261101-v032-docked/`. Committed locally; push needs the owner's yes.
+
+**Update 2026-11-07 (UI polish, source only):** the source now has the page lang attribute follows the language switch and the status line is a live region (U4, U5). A CCX of this build was made and natively checked by development load (`evidence/native-20261107-polish/README.md`): sha256 `71d39f5a1c6bacf6cf04b89e3c915298b7cb68cb07a322816d95b2c9e960f2b4`, staging `03b5b516...`. That CCX is NOT installed in the owner profile, so the installed package is still the earlier CCX recorded above; install the new CCX to match this source. Not approved for distribution.
