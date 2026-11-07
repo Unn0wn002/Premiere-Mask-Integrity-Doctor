@@ -1,0 +1,46 @@
+{
+  "schema": "MID-REPORT-1",
+  "tool": "Premiere Mask Integrity Doctor v0",
+  "generatedAt": "2026-11-01T07:50:50.464Z",
+  "host": null,
+  "overall": "FAIL",
+  "api": {
+    "verdict": "PASS",
+    "missing": [],
+    "objectMaskFunctions": [
+      "hasObjectMask"
+    ],
+    "exporterFunctions": [
+      "exportSequenceFrame"
+    ],
+    "hasObjectMaskPresent": true,
+    "exportSequenceFramePresent": true
+  },
+  "presence": {
+    "verdict": "PASS",
+    "reasons": [
+      "0 clip(s) with an object mask, 1 without."
+    ],
+    "withMask": 0,
+    "withoutMask": 1,
+    "unknown": 0,
+    "total": 1
+  },
+  "export": {
+    "verdict": "FAIL",
+    "reasons": [
+      "Frame at 1 s failed: Could not find an entry of 'blob:/blob-3/mid_1.png'",
+      "Frame at 2 s failed: Could not find an entry of 'blob:/blob-3/mid_2.png'",
+      "Frame at 3 s failed: Could not find an entry of 'blob:/blob-3/mid_3.png'",
+      "Frame at 4 s failed: Could not find an entry of 'blob:/blob-3/mid_4.png'"
+    ],
+    "ok": 0,
+    "failed": 4,
+    "total": 4
+  },
+  "determinism": null,
+  "notes": [
+    "Mask internals (geometry, keyframes, tracking) are not read; anything about them is UNKNOWN.",
+    "This report checks delivery consistency only. It cannot tell whether a mask is correct."
+  ]
+}

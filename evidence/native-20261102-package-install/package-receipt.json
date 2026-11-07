@@ -1,0 +1,49 @@
+{
+  "receiptVersion": 1,
+  "version": "0.3.2",
+  "pluginId": "com.unn0wn002.mask-integrity.beta",
+  "identity": "ab69efc12ed20418827a8ae5a14d0b4a2fa886857843aff4d65c58f15376a238",
+  "files": [
+    {
+      "file": "manifest.json",
+      "sha256": "382ba4d5ad31a75a3b8750374610368373622aa1d08b1a4494088793a9e887fb"
+    },
+    {
+      "file": "index.html",
+      "sha256": "dc9f3b7255f28647cc961e1c7fb97db060513010c80ed3563b94f46dc34d5dad"
+    },
+    {
+      "file": "index.js",
+      "sha256": "1820406fbb43096b01d5c62e8b8eafcbee21b63195bee220209cdde7523584b4"
+    },
+    {
+      "file": "src/core.js",
+      "sha256": "f98a295c356919bb884a3f16d9f14633963253922f07bfe6aeed5c522adfc5d6"
+    },
+    {
+      "file": "src/i18n.js",
+      "sha256": "d97044ef63d38c9b4f808b8b559dc5907c6ce53d87642566802082b69e187ee2"
+    },
+    {
+      "file": "src/premiereAdapter.js",
+      "sha256": "eb24a7443838c171c68cd8cef7d5b174445b7ed6fff6db00112141a7fc11fbf2"
+    },
+    {
+      "file": "src/projectFile.js",
+      "sha256": "aadec1514366db70b4b267a7adea9050960a2eaa355eca81bfadda71343de206"
+    }
+  ],
+  "source": {
+    "branch": "release/package-0.3.2-20261102",
+    "commit": "62b7301c865d2bc63cb9e3130f31412889c89536",
+    "workingTreeDirty": false
+  },
+  "normalization": "UTF-8 runtime text; CRLF normalized to LF",
+  "qualification": "STATIC ONLY; unsigned developer ZIP; host validation and installation qualification pending",
+  "packageKind": "unsigned-developer-zip",
+  "nativeValidation": "NOT_ESTABLISHED_BY_PACKAGING",
+  "installationQualified": false,
+  "stagingDirectory": "C:\\Users\\unn0w\\Downloads\\02_Projects\\Premiere-Mask-Integrity-Doctor\\artifacts\\mask-integrity-0.3.2-ab69efc12ed2",
+  "packageFile": "C:\\Users\\unn0w\\Downloads\\02_Projects\\Premiere-Mask-Integrity-Doctor\\artifacts\\mask-integrity-0.3.2-ab69efc12ed2-developer.zip",
+  "packageSha256": "4378653f437982cbc9a1a7e7def975786eacfbeeacd12b71b5088a37272020eb"
+}

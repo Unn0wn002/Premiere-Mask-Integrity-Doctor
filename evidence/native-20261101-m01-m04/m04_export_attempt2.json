@@ -1,0 +1,104 @@
+{
+  "schema": "MID-REPORT-1",
+  "tool": "Premiere Mask Integrity Doctor v0",
+  "generatedAt": "2026-11-01T07:52:05.463Z",
+  "host": null,
+  "overall": "FAIL",
+  "api": null,
+  "presence": null,
+  "export": {
+    "verdict": "FAIL",
+    "reasons": [
+      "Frame at 1 s failed: no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_1.png'",
+      "Frame at 2 s failed: no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_2.png'",
+      "Frame at 3 s failed: no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_3.png'",
+      "Frame at 4 s failed: no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_4.png'"
+    ],
+    "ok": 0,
+    "failed": 4,
+    "total": 4,
+    "details": [
+      {
+        "timeSeconds": 1,
+        "fileName": "mid_1.png",
+        "ok": false,
+        "bytes": 0,
+        "attempts": [
+          {
+            "variant": "A",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_1.png'"
+          },
+          {
+            "variant": "B",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_1.png'"
+          }
+        ],
+        "error": "no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_1.png'"
+      },
+      {
+        "timeSeconds": 2,
+        "fileName": "mid_2.png",
+        "ok": false,
+        "bytes": 0,
+        "attempts": [
+          {
+            "variant": "A",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_2.png'"
+          },
+          {
+            "variant": "B",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_2.png'"
+          }
+        ],
+        "error": "no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_2.png'"
+      },
+      {
+        "timeSeconds": 3,
+        "fileName": "mid_3.png",
+        "ok": false,
+        "bytes": 0,
+        "attempts": [
+          {
+            "variant": "A",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_3.png'"
+          },
+          {
+            "variant": "B",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_3.png'"
+          }
+        ],
+        "error": "no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_3.png'"
+      },
+      {
+        "timeSeconds": 4,
+        "fileName": "mid_4.png",
+        "ok": false,
+        "bytes": 0,
+        "attempts": [
+          {
+            "variant": "A",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_4.png'"
+          },
+          {
+            "variant": "B",
+            "returned": false,
+            "readError": "Could not find an entry of 'blob:/blob-1/mid_4.png'"
+          }
+        ],
+        "error": "no file written (A: returned=false; B: returned=false); readback: Could not find an entry of 'blob:/blob-1/mid_4.png'"
+      }
+    ]
+  },
+  "determinism": null,
+  "notes": [
+    "Mask internals (geometry, keyframes, tracking) are not read; anything about them is UNKNOWN.",
+    "This report checks delivery consistency only. It cannot tell whether a mask is correct."
+  ]
+}

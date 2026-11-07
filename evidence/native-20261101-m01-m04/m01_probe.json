@@ -1,0 +1,26 @@
+{
+  "schema": "MID-REPORT-1",
+  "tool": "Premiere Mask Integrity Doctor v0",
+  "generatedAt": "2026-11-01T07:49:39.475Z",
+  "host": null,
+  "overall": "PASS",
+  "api": {
+    "verdict": "PASS",
+    "missing": [],
+    "objectMaskFunctions": [
+      "hasObjectMask"
+    ],
+    "exporterFunctions": [
+      "exportSequenceFrame"
+    ],
+    "hasObjectMaskPresent": true,
+    "exportSequenceFramePresent": true
+  },
+  "presence": null,
+  "export": null,
+  "determinism": null,
+  "notes": [
+    "Mask internals (geometry, keyframes, tracking) are not read; anything about them is UNKNOWN.",
+    "This report checks delivery consistency only. It cannot tell whether a mask is correct."
+  ]
+}
