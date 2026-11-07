@@ -11,6 +11,14 @@ const root = path.join(__dirname, "..");
 const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const js = fs.readFileSync(path.join(root, "index.js"), "utf8");
 
+test("the page lang attribute is set from the panel language and the status line is a live region", () => {
+  const apply = /function applyLanguage\(\) \{([\s\S]*?)\n\}/.exec(js);
+  assert.ok(apply, "applyLanguage exists");
+  assert.match(apply[1], /document\.documentElement\.lang\s*=\s*state\.lang/);
+  assert.match(html, /<div id="status"[^>]*role="status"/);
+  assert.match(html, /<div id="status"[^>]*aria-live="polite"/);
+});
+
 test("ja and en have the same keys", () => {
   assert.deepStrictEqual(Object.keys(MESSAGES.ja).sort(), Object.keys(MESSAGES.en).sort());
 });
