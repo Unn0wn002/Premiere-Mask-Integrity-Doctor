@@ -18,7 +18,7 @@ Compiled 2026-11-06 from `PROJECT_LOG.md` (latest entry 2026-11-02), `evidence/n
 
 ### Remaining gates
 - Clean-profile install, restart, upgrade, uninstall and reinstall — NOT_RUN (`evidence/native-20261102-package-install/README.md`).
-- Failing project (missing mask data) in the installed panel — NOT_RUN (covered only on the development build, `evidence/native-20261101-v030/`).
+- Failing project (missing mask data) in the installed panel — PASS_BOUNDED_NATIVE 2026-11-07: FAIL result with the missing-mask-data finding on installed 0.3.2 (`evidence/native-20261107-failing-project/README.md`); the development-build cases remain in `evidence/native-20261101-v030/`.
 - True other-PC handoff — NOT_RUN (FAIL cases were simulated inside a copy; `KNOWN_LIMITATIONS.md`, audit).
 - Other Premiere builds, Mac, footage of people — NOT_RUN; the undocumented saved-project format is mapped on 26.5.2.5 only (audit).
 - Native-speaker review of the Japanese UI — NOT_RUN (evidence READMEs).
