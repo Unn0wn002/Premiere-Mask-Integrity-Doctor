@@ -1,0 +1,44 @@
+{
+  "schema": "MID-REPORT-1",
+  "tool": "Premiere Mask Integrity Doctor v0",
+  "generatedAt": "2026-11-01T07:56:30.558Z",
+  "host": null,
+  "overall": "PASS",
+  "api": {
+    "verdict": "PASS",
+    "missing": [],
+    "objectMaskFunctions": [
+      "hasObjectMask"
+    ],
+    "exporterFunctions": [
+      "exportSequenceFrame"
+    ],
+    "hasObjectMaskPresent": true,
+    "exportSequenceFramePresent": true
+  },
+  "presence": {
+    "verdict": "PASS",
+    "reasons": [
+      "0 clip(s) with an object mask, 1 without."
+    ],
+    "withMask": 0,
+    "withoutMask": 1,
+    "unknown": 0,
+    "total": 1,
+    "clips": [
+      {
+        "name": "matte_red",
+        "track": 0,
+        "hasMask": false,
+        "error": null
+      }
+    ]
+  },
+  "export": null,
+  "determinism": null,
+  "matrix": null,
+  "notes": [
+    "Mask internals (geometry, keyframes, tracking) are not read; anything about them is UNKNOWN.",
+    "This report checks delivery consistency only. It cannot tell whether a mask is correct."
+  ]
+}

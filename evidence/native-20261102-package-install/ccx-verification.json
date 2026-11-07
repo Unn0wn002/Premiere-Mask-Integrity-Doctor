@@ -1,0 +1,62 @@
+﻿{
+    "verifiedAt":  "2026-11-02T15:09:46.2857323Z",
+    "pluginId":  "com.unn0wn002.mask-integrity.beta",
+    "version":  "0.3.2",
+    "stagingIdentity":  "ab69efc12ed20418827a8ae5a14d0b4a2fa886857843aff4d65c58f15376a238",
+    "source":  {
+                   "branch":  "release/package-0.3.2-20261102",
+                   "commit":  "62b7301c865d2bc63cb9e3130f31412889c89536",
+                   "workingTreeDirty":  false
+               },
+    "package":  "C:\\Users\\unn0w\\Downloads\\02_Projects\\Premiere-Mask-Integrity-Doctor\\artifacts\\ccx-mask-integrity-0.3.2-ab69efc12ed2\\com.unn0wn002.mask-integrity.beta_premierepro.ccx",
+    "packageSha256":  "c6b363338a14ff353caf220aa9fcb4c775c58a86c77d266691944f78953b098d",
+    "developerArchiveHashMatches":  false,
+    "runtimeMatchesStaging":  true,
+    "nativeValidation":  "NOT_ESTABLISHED_BY_PACKAGING",
+    "installationQualified":  false,
+    "qualification":  "Archive integrity only; no native or installation qualification",
+    "files":  [
+                  {
+                      "file":  "manifest.json",
+                      "sha256":  "e7547580f90e12dbcf48bce5e4bdd405088c63f33dadc6a3ef0163481ca4bddc",
+                      "exactBytes":  false,
+                      "manifestValuesEqual":  true
+                  },
+                  {
+                      "file":  "index.html",
+                      "sha256":  "dc9f3b7255f28647cc961e1c7fb97db060513010c80ed3563b94f46dc34d5dad",
+                      "exactBytes":  true,
+                      "manifestValuesEqual":  null
+                  },
+                  {
+                      "file":  "index.js",
+                      "sha256":  "1820406fbb43096b01d5c62e8b8eafcbee21b63195bee220209cdde7523584b4",
+                      "exactBytes":  true,
+                      "manifestValuesEqual":  null
+                  },
+                  {
+                      "file":  "src/core.js",
+                      "sha256":  "f98a295c356919bb884a3f16d9f14633963253922f07bfe6aeed5c522adfc5d6",
+                      "exactBytes":  true,
+                      "manifestValuesEqual":  null
+                  },
+                  {
+                      "file":  "src/i18n.js",
+                      "sha256":  "d97044ef63d38c9b4f808b8b559dc5907c6ce53d87642566802082b69e187ee2",
+                      "exactBytes":  true,
+                      "manifestValuesEqual":  null
+                  },
+                  {
+                      "file":  "src/premiereAdapter.js",
+                      "sha256":  "eb24a7443838c171c68cd8cef7d5b174445b7ed6fff6db00112141a7fc11fbf2",
+                      "exactBytes":  true,
+                      "manifestValuesEqual":  null
+                  },
+                  {
+                      "file":  "src/projectFile.js",
+                      "sha256":  "aadec1514366db70b4b267a7adea9050960a2eaa355eca81bfadda71343de206",
+                      "exactBytes":  true,
+                      "manifestValuesEqual":  null
+                  }
+              ]
+}

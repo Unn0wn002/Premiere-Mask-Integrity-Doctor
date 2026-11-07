@@ -1,0 +1,107 @@
+{
+  "schema": "MID-REPORT-1",
+  "tool": "Premiere Mask Integrity Doctor v0",
+  "generatedAt": "2026-11-01T07:53:22.795Z",
+  "host": null,
+  "overall": "FAIL",
+  "api": null,
+  "presence": null,
+  "export": null,
+  "determinism": null,
+  "matrix": {
+    "verdict": "FAIL",
+    "total": 16,
+    "worked": [],
+    "returnedTrue": [],
+    "threw": 0,
+    "reasons": [
+      "None of 16 combinations wrote a file."
+    ],
+    "details": [
+      {
+        "label": "320x180 t=0 png formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "320x180 t=0 png formB",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "320x180 t=0 jpg formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "320x180 t=0 jpg formB",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "320x180 t=1 png formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "320x180 t=1 png formB",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "320x180 t=1 jpg formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "320x180 t=1 jpg formB",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=0 png formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=0 png formB",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=0 jpg formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=0 jpg formB",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=1 png formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=1 png formB",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=1 jpg formA",
+        "returned": false,
+        "bytes": 0
+      },
+      {
+        "label": "1920x1080 t=1 jpg formB",
+        "returned": false,
+        "bytes": 0
+      }
+    ]
+  },
+  "notes": [
+    "Mask internals (geometry, keyframes, tracking) are not read; anything about them is UNKNOWN.",
+    "This report checks delivery consistency only. It cannot tell whether a mask is correct."
+  ]
+}

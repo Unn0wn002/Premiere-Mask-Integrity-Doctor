@@ -1,0 +1,207 @@
+{
+  "schema": "MID-REPORT-2",
+  "tool": "Premiere Mask Integrity Doctor v0.3",
+  "generatedAt": "2026-11-01T12:00:53.189Z",
+  "host": null,
+  "overall": "WARN",
+  "api": {
+    "verdict": "PASS",
+    "missing": [],
+    "objectMaskFunctions": [
+      "hasObjectMask"
+    ],
+    "exporterFunctions": [
+      "exportSequenceFrame"
+    ],
+    "hasObjectMaskPresent": true,
+    "exportSequenceFramePresent": true
+  },
+  "scan": {
+    "verdict": "WARN",
+    "reasons": [
+      "1 clip(s) with an object mask, 2 without.",
+      "Mask data folder found with 2 .prmf file(s).",
+      "Same media is masked in 1 clip(s) but not in 1 other(s): subject_0001.png. Check whether those also need a mask."
+    ],
+    "codes": [
+      {
+        "k": "P_COUNTS",
+        "p": {
+          "m": 1,
+          "w": 2
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "F_MASK_DATA_OK",
+        "severity": "INFO",
+        "clipIds": [],
+        "p": {
+          "n": 2,
+          "kb": 58
+        }
+      },
+      {
+        "code": "F_SOURCE_PARTLY_MASKED",
+        "severity": "WARN",
+        "clipIds": [
+          "0:0:2"
+        ],
+        "p": {
+          "name": "subject_0001.png",
+          "m": 1,
+          "u": 1
+        }
+      }
+    ],
+    "counts": {
+      "masked": 1,
+      "unmasked": 2,
+      "unknown": 0,
+      "total": 3,
+      "sequences": 1
+    },
+    "maskData": {
+      "checked": true,
+      "folder": "\\\\?\\C:\\Users\\unn0w\\Downloads\\02_Projects\\Premiere-Mask-Integrity-Doctor\\_qa_scratch\\mid_mask_handoff Masks",
+      "exists": true,
+      "files": 2,
+      "bytes": 59092,
+      "guids": [
+        "7e20343b-11a5-4976-a3e5-752a50a55b9e",
+        "e710f900-b87b-4138-b213-2eab8808b691"
+      ],
+      "pathForm": "native"
+    },
+    "clips": [
+      {
+        "id": "0:0:0",
+        "seq": 0,
+        "seqName": "matte_red",
+        "track": 0,
+        "trackName": "V1",
+        "trackHidden": false,
+        "name": "matte_red",
+        "start": 0,
+        "end": 5,
+        "disabled": false,
+        "sourceKey": "path:1129270354",
+        "hasMask": false,
+        "startTicks": "0",
+        "masks": []
+      },
+      {
+        "id": "0:0:1",
+        "seq": 0,
+        "seqName": "matte_red",
+        "track": 0,
+        "trackName": "V1",
+        "trackHidden": false,
+        "name": "subject_0001.png",
+        "start": 5,
+        "end": 6.6,
+        "disabled": false,
+        "sourceKey": "path:C:\\Users\\unn0w\\Downloads\\02_Projects\\Premiere-Mask-Integrity-Doctor\\_qa_scratch\\fixtures\\subject_seq\\subject_0001.png",
+        "hasMask": true,
+        "startTicks": "1270080000000",
+        "masks": [
+          {
+            "instance": "01",
+            "guids": [
+              "cc6ae7fe-7f2e-4211-84a7-2926b5d0c13a",
+              "7e20343b-11a5-4976-a3e5-752a50a55b9e",
+              "e710f900-b87b-4138-b213-2eab8808b691"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "0:0:2",
+        "seq": 0,
+        "seqName": "matte_red",
+        "track": 0,
+        "trackName": "V1",
+        "trackHidden": false,
+        "name": "subject_0001.png",
+        "start": 6.6,
+        "end": 8.2,
+        "disabled": false,
+        "sourceKey": "path:C:\\Users\\unn0w\\Downloads\\02_Projects\\Premiere-Mask-Integrity-Doctor\\_qa_scratch\\fixtures\\subject_seq\\subject_0001.png",
+        "hasMask": false,
+        "startTicks": "1676505600000",
+        "masks": []
+      }
+    ],
+    "objectMaskSequences": [
+      "matte_red"
+    ],
+    "savedState": {
+      "readable": true,
+      "error": null,
+      "matched": 3,
+      "liveUnmatched": 0,
+      "savedUnmatched": 0
+    },
+    "projectHasObjectMask": true,
+    "sequences": [
+      {
+        "index": 0,
+        "name": "matte_red",
+        "fps": 30,
+        "duration": 8.2,
+        "tracks": [
+          {
+            "index": 0,
+            "name": "V1",
+            "label": "Video 1",
+            "hidden": false
+          },
+          {
+            "index": 1,
+            "name": "V2",
+            "label": "Video 2",
+            "hidden": false
+          },
+          {
+            "index": 2,
+            "name": "V3",
+            "label": "Video 3",
+            "hidden": false
+          }
+        ],
+        "isActive": true,
+        "hasObjectMask": true
+      }
+    ],
+    "capabilities": {
+      "sequence.guid": true,
+      "sequence.name": true,
+      "sequence.getTimebase": true,
+      "sequence.getEndTime": true,
+      "track.name": true,
+      "track.isMuted": true,
+      "trackItem.getStartTime": true,
+      "trackItem.getEndTime": true,
+      "trackItem.isDisabled": true,
+      "trackItem.getProjectItem": true,
+      "ClipProjectItem.cast": true,
+      "clipProjectItem.getMediaFilePath": true,
+      "ObjectMaskUtils.hasObjectMask(sequence)": true,
+      "ObjectMaskUtils.hasObjectMask(project)": true,
+      "project.path": true,
+      "fs.readFileSync(project)": "native",
+      "fs.readdirSync": "native",
+      "project.name": true
+    },
+    "projectName": "mid_mask_handoff.prproj"
+  },
+  "presence": null,
+  "export": null,
+  "determinism": null,
+  "matrix": null,
+  "notes": [
+    "Mask internals (geometry, keyframes, tracking) are not read; anything about them is UNKNOWN.",
+    "This report checks delivery consistency only. It cannot tell whether a mask is correct."
+  ]
+}
