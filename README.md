@@ -6,7 +6,7 @@ easy-to-miss problems (same media masked in one place but not another, masked cl
 It never edits the project, never reads or judges mask shapes, and creates no masks.
 
 **Status: private beta 0.3.2 (Japanese-first UI), `main` `fd20bcd`. Verified in Premiere 26.5.2.5 on disposable projects with a real
-Object Mask, and the 0.3.2 CCX installed and scanned (floating and docked) in the owner's normal profile (see `evidence/native-20261102-package-install/`). Not released, not approved for distribution.** See PROJECT_STATUS.md for current status.
+Object Mask, and the 0.3.2 CCX installed and scanned (floating and docked) in the owner's normal profile (see `evidence/native-20261102-package-install/`). Beta pre-release [v0.3.2-beta.1](https://github.com/Unn0wn002/Premiere-Mask-Integrity-Doctor/releases/tag/v0.3.2-beta.1) (unsigned CCX); not approved for general distribution.** See PROJECT_STATUS.md for current status.
 See `PROJECT_STATUS.md`, `TEST_MATRIX.md`, `KNOWN_LIMITATIONS.md`.
 
 ## How it decides
@@ -38,7 +38,10 @@ node tests/check-syntax.js
 Unit tests use test doubles and a synthetic project (plus the real disposable project when present locally).
 They are not Premiere host evidence. The static checks also enforce that the only file write is the report.
 
-## To try it (needs the owner's go-ahead for any install)
+## Install (Windows, Premiere Pro 26.5.2 or newer)
+Download the `.ccx` from the [latest pre-release](https://github.com/Unn0wn002/Premiere-Mask-Integrity-Doctor/releases/tag/v0.3.2-beta.1), double-click it or open it with Creative Cloud Desktop, restart Premiere Pro, open the panel from the Window menu. It is unsigned, so Creative Cloud may warn. Tested on one machine only.
+
+### For developers
 Load the folder in UXP Developer Tools (Add Plugin → `manifest.json` → Load), open the panel, **save the project**, then Scan.
 
 ## Package (0.3.2, unsigned developer ZIP)
