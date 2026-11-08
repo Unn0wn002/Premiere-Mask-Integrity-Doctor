@@ -9,7 +9,7 @@ A read-only UXP panel that checks object-mask integrity before handoff: which cl
 It never edits the project, never judges mask shapes or quality, creates no masks, and does not check whether a mask file is corrupt. Frame export does not work on the tested build and is disabled.
 
 ## Install
-1. Open the packaged `.ccx` with Creative Cloud Desktop and follow its install flow, then restart Premiere Pro.
+1. Download `com.unn0wn002.mask-integrity.beta_premierepro.ccx` from the [GitHub pre-release](https://github.com/Unn0wn002/Premiere-Mask-Integrity-Doctor/releases/tag/v0.3.2-beta.1), then double-click it or open it with Creative Cloud Desktop and follow its install flow (the package is unsigned, so a warning is expected). Restart Premiere Pro. Needs Premiere Pro 26.5.2 or newer.
 2. Open the panel from the Window menu and dock it as a tab.
 3. For development: load `manifest.json` in Adobe UXP Developer Tools (Add Plugin > Load).
 
